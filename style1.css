@@ -1,0 +1,341 @@
+/*
+Body Styles
+
+Sets the overall styling for the body of the document.
+
+Style guide: #body
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+  }
+  
+  /*
+  Header, Main, Footer Styles
+  
+  Applies styles to header, main content, and footer sections.
+  
+  Style guide: #header, #main, #footer
+  */
+  header, main, footer {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /*
+  Header Styles
+  
+  Defines styles for the header section.
+  
+  Style guide: #header
+  */
+  header {
+    background-color: #333;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  /*
+  Main Styles
+  
+  Styles for the main content area.
+  
+  Style guide: #main
+  */
+  main {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /*
+  Game Container Styles
+  
+  Styles for the game container.
+  
+  Style guide: #game-container
+  */
+  .game-container {
+    width: 100%;
+  }
+  
+  /*
+  Game Board Styles
+  
+  Styles for the game board section.
+  
+  Style guide: #game-board
+  */
+  .game-board {
+    width: 100%;
+    max-width: 1200px;
+    margin: 10px 0;
+    aspect-ratio: 1.6/1;
+    display: grid;
+    gap: 2px;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(auto-fill, minmax(20px, 1fr));
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  /*
+  Cell Styles
+  
+  Styles for individual cells within the game board.
+  
+  Style guide: #cell
+  */
+  .cell {
+    width: 100%;
+    aspect-ratio: 1;
+    font-size: 14px;
+  }
+  
+  /*
+  Mine Styles
+  
+  Styles for cells representing mines.
+  
+  Style guide: #mine
+  */
+  .mine {
+    background-color: red;
+    color: white;
+  }
+  
+  /*
+  Hidden Styles
+  
+  Styles for hidden cells.
+  
+  Style guide: #hidden
+  */
+  .hidden {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  /*
+  Flagged Styles
+  
+  Styles for flagged cells.
+  
+  Style guide: #flagged
+  */
+  .flagged {
+    background-color: #66cc66;
+    color: white;
+  }
+  
+  /*
+  Footer Styles
+  
+  Styles for the footer section.
+  
+  Style guide: #footer
+  */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+  
+  /*
+  Media Query for Small Screens
+  
+  Adjust styles for small screens using a media query.
+  
+  Style guide: #media-query
+  */
+  @media only screen and (max-width: 600px) {
+    body {
+      font-size: 16px;
+    }
+  
+    header {
+      font-size: 18px;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    .game-board {
+      margin: 10px 0;
+    }
+  
+    .cell {
+      font-size: 12px;
+    }
+  
+    .AboutMe {
+      margin-bottom: 0;
+    }
+  }
+  
+  /*
+  Modal Styles
+  
+  Styles for a modal dialog.
+  
+  Style guide: #modal
+  */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /*
+  Modal Content Styles
+  
+  Styles for the content within the modal.
+  
+  Style guide: #modal-content
+  */
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /*
+  Close Button Styles
+  
+  Styles for the close button within the modal.
+  
+  Style guide: #close
+  */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #333;
+  }
+  
+  /*
+  Result Image Styles
+  
+  Styles for the result image.
+  
+  Style guide: #result-image
+  */
+  #result-image {
+    max-width: 100%;
+    max-height: 200px;
+    margin-bottom: 10px;
+  }
+  
+  /*
+  Button Styles
+  
+  Styles for general buttons.
+  
+  Style guide: #button
+  */
+  button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  /*
+  Settings Update Form Styles
+  
+  Styles for the settings update form.
+  
+  Style guide: #settings-update-form
+  */
+  #settings-update-form {
+    margin-top: 20px;
+  }
+  
+  /*
+  Label Styles
+  
+  Styles for labels within the settings update form.
+  
+  Style guide: #label
+  */
+  #settings-update-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /*
+  Input Styles
+  
+  Styles for input fields within the settings update form.
+  
+  Style guide: #input
+  */
+  #settings-update-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /*
+  Button Styles within Settings Update Form
+  
+  Styles for buttons within the settings update form.
+  
+  Style guide: #settings-update-button
+  */
+  #settings-update-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #settings-update-form button:hover {
+    background-color: #45a049;
+  }
+  

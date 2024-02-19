@@ -1,0 +1,62 @@
+y<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saper</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (min-device-pixel-ratio: 2)" href="style-high-res.css">
+</head>
+<body>
+  <header>
+    <h1>Saper</h1>
+  </header>
+
+  <main>
+   
+    <section class="game-container">
+      <main>
+        <section class="game-container">
+      <section class="game-board" id="game-board"></section>
+      <section class="moves-counter" id="moves-counter">Moves: 0</section>
+    </section>
+
+  
+    <div id="settings-update-form">
+      <form id="update-form">
+        <label for="new-rows">New Rows:</label>
+        <input type="number" id="new-rows" name="new-rows" min="1" value="20">
+
+        <label for="new-mines">New Mines:</label>
+        <input type="number" id="new-mines" name="new-mines" min="1" value="80">
+
+        <button type="submit">Update Settings</button>
+      
+      </form>
+      <button id="play-again-button">Play Again</button>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="AboutMe">
+      <h2>About Me</h2>
+      <p>Project by: Karol Dąbrowski</p>
+    </div>
+    <div class="github-link">
+      <p>&copy; 2024 Saper</p>
+      <p><a href="https://github.com/Poicalee" target="_blank">GitHub</a></p>
+    </div>
+  </footer>
+
+  <div id="result-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img id="result-image" src="" alt="Result Image">
+      <p id="result-message"></p>
+      <button id="exit-button">Exit</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
